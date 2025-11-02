@@ -1,0 +1,91 @@
+:root {
+    --nav-links-margin: 15%;
+}
+
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+span.kebab {
+    color: red;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+}
+
+.upper-header {
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    height: 60%;
+}
+.upper-header nav {
+    display: flex;
+    align-items: center;
+    margin-right: calc(var(--nav-links-margin) - 5%);     /* the same margin as links so links dont overflow to the right */
+}
+.upper-header nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: var(--nav-links-margin);
+}
+.upper-header h1 {
+    margin-left: 4%;
+    font-weight: bold;
+}
+
+.lowwer-header {
+    justify-content: center;
+}
+.lowwer-header h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.lowwer-header, .upper-header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.goal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+    height: 100vh;
+    width: 100%;
+}
+
+.background-section-image {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.text-above-image {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-weight: 900;
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
