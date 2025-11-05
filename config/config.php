@@ -1,5 +1,5 @@
 <?php 
-    $title = "To-Do";
+    $title = "Turky Kebab";
 
     $pathToStyles = "\\..\\public\\static\\styles.css";
 

@@ -1,6 +1,6 @@
 <?php 
     try {
-        require __DIR__ . "../config/config.php";
+        require "..\\config\\config.php";
     } catch (Exception $e) {
         echo("could not open config file!\nError details:\t" . $e);
     }
@@ -11,7 +11,7 @@
         echo"could not connect";
     }
 
-    if($db_connection) {
+/*     if($db_connection) {
         echo("current status: connected<br>");
-    }
+    } */
 ?>

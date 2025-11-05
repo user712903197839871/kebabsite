@@ -5,18 +5,21 @@
 
     function retriveData($conn, $table) {
         $sql_querry = "SELECT * FROM {$table}";
+        
 
-        $result = mysqli_query($conn, $sql_querry); 
+        $result = mysqli_query($conn, $sql_querry);
 
         if(mysqli_num_rows($result) < 1) {
             echo("SOMETHING WENT WRONG!<br>NO ROWS AFFECTED!");
-            return;
+            return ["success" => false];
         }
 
         $rows = array();
+        $rows["success"] = true;
+        $rows["result"] = array();
 
         while($row = mysqli_fetch_assoc($result)) {
-            array_push($rows, $row);
+            array_push($rows["result"], $row);
             $GLOBALS["highestID"] = $row["ID"];
         }
         

@@ -10,5 +10,6 @@
         <?php include("../includes/header.php") ?>
         <main><?=$content?></main>
         <?php include("../includes/footer.php") ?>
+        <script src="../public/static/js.js" defer></script>
     </body>
 </html>

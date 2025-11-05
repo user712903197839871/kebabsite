@@ -6,7 +6,7 @@
 
 <?php include("../includes/components/our_goal.php")?>
 
-<h1>our workers</h1>
+<?php include("../includes/components/our_workers.php") ?>
 
 <h1>customer comments</h1>
 

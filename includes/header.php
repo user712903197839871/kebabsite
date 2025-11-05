@@ -4,7 +4,10 @@
 
 <header class="header">
     <div class="upper-header"> 
-        <h1>Turky Kebab</h1>
+        <div>
+            <img src="../images/logo.png" alt="" class="logo-img">
+            <h1>Turky Kebab</h1>
+        </div>
         <nav>
             <a href="">link1</a>
             <a href="">link2</a>
